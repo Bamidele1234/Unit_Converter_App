@@ -9,6 +9,7 @@ An app to convert the standard units of measurements(millimeter, centimeter, met
 - Pick the unit you want to convert from
 - Pick the unit you want to convert to
 - Hit 'CONVERT' !
+- Tap the 'switch' button in between the textfield to change where you input the text
 
 **Conversion made easy**
 
