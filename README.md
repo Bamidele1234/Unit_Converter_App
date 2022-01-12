@@ -1,5 +1,5 @@
 # Unit_Converter_App
-An app to convert the standard units of measurements(millimeter, centimeter, meter, kilometer) to other less used units(inch, foot, yard, mile)
+An app to convert the standard units of measurements to other less used units
 
 ## Description
 ---
