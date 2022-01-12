@@ -17,5 +17,4 @@ An app to convert the standard units of measurements to other less used units
 ### Major parts of the code
 ---
 - **[MainActivity.kt](https://github.com/Bamidele1234/Unit_Converter_App/blob/master/app/src/main/java/com/example/Unit_Converter_App/MainActivity.kt)**
-- **[Download](https://github.com/Bamidele1234/Unit_Converter_App/raw/master/Main_App.apk)
-***Works best with a tablet screen layout***
+- **[Download the .apk file here](https://github.com/Bamidele1234/Unit_Converter_App/raw/master/Main_App.apk)
