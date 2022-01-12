@@ -5,6 +5,7 @@ An app to convert the standard units of measurements to other less used units
 ---
 
 ### Convert lengths with these easy steps
+***Convert (millimeter, centimeter, meter, kilometer) to (inch, foot, yard, mile)***
 - Type in the value
 - Pick the unit you want to convert from
 - Pick the unit you want to convert to
