@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Unit Converter App</string>
+    <string name="type_here">Type here</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="millimeter">Millimeter</string>
+    <string name="centimeter">Centimeter</string>
+    <string name="meter">Meter</string>
+    <string name="kilometer">Kilometer</string>
+    <string name="inch">Inch</string>
+    <string name="foot">Foot</string>
+    <string name="yard">Yard</string>
+    <string name="mile">Mile</string>
+    <string name="press_calculate">Press calculate</string>
+    <string name="convert">Convert</string>
+    <string name="request">Please input a value in either text field</string>
+
+</resources>

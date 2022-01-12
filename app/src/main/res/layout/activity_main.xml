@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_value1"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        android:hint="@string/type_here"
+        android:fontFamily="@font/poppins_light"
+        app:boxStrokeWidth="2dp"
+        app:startIconDrawable="@drawable/ic_calculate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_value_edit1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_light"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/icon_input_query"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:importantForAccessibility="no"
+        app:layout_constraintBottom_toBottomOf="@+id/input_value2"
+        app:layout_constraintEnd_toStartOf="@id/input_value2"
+        app:layout_constraintStart_toEndOf="@+id/input_value1"
+        app:layout_constraintTop_toTopOf="@+id/input_value2"
+        app:srcCompat="@drawable/ic_swap" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_value2"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="20dp"
+        android:hint="@string/type_here"
+        android:fontFamily="@font/poppins_light"
+        app:boxStrokeWidth="2dp"
+        app:startIconDrawable="@drawable/ic_calculate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/input_value_edit2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_light"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/service_question"
+        style="@style/Widget.Convert.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/from"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/input_value1"
+        app:layout_constraintTop_toBottomOf="@id/input_value1" />
+
+    <TextView
+        android:id="@+id/service_question2"
+        style="@style/Widget.Convert.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/to"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/input_value2"
+        app:layout_constraintTop_toBottomOf="@id/input_value2" />
+
+    <RadioGroup
+        android:id="@+id/from_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/millimeter"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/service_question"
+        app:layout_constraintTop_toBottomOf="@id/service_question">
+
+        <RadioButton
+            android:id="@+id/millimeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/millimeter"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/centimeter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/centimeter"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/meter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/meter"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/kilometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/kilometer"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/to_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/inch"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/service_question2"
+        app:layout_constraintTop_toBottomOf="@id/service_question2">
+
+        <RadioButton
+            android:id="@+id/inch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/inch"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/foot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/foot"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/yard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/yard"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/mile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/mile"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/calculate_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|end"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="15dp"
+            android:contentDescription="@string/press_calculate"
+            android:text="@string/convert"
+            android:textSize="20sp"
+            app:icon="@drawable/ic_refresh_24"
+            app:iconSize="25dp"
+            app:iconTint="?attr/colorPrimary" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
