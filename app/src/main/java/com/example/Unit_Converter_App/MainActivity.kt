@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     //Boolean for the switching
     private var state : Boolean = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
