@@ -12,3 +12,8 @@ An app to convert the standard units of measurements to other less used units
 
 ## Note
 **This personal project was done after the completion of Pathway 2, Unit 2: Layouts, Android Basics in Kotlin**
+
+## Screenshots
+**Main Screen**
+--
+<img src = "app/src/main/res/drawable/screenshot_20220219_013703_unit_converter_app.jpg" width = "400">
